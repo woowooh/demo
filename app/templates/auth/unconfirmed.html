@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}福蜡斯克- 验证你的账户{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>
+        你好, {{ current_user.username }}!
+    </h1>
+    <h3>您的账户还没有验证邮箱哦.</h3>
+    <p>
+		你必须验证你的邮箱才可以查看这些页面.
+		查看您的收件箱，我们已经发送了一封附有验证链接的邮件给您.
+    </p>
+    <p>
+        未收到验证邮件?
+        <a href="{{ url_for('auth.resend_confirmation') }}">再次发送</a>
+    </p>
+</div>
+{% endblock %}

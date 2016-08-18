@@ -1,0 +1,7 @@
+<p>{{ user.username }},您好</p>
+<p>为了激活您在福蜡斯克更改的新邮箱<a href="{{ url_for('auth.change_email', token=token, _external=True) }}">点击确认</a>.</p>
+<p>您同样可以选择复制下面的链接到浏览器地址栏来激活您的新邮箱</p>
+<p>{{ url_for('auth.change_email', token=token, _external=True) }}</p>
+<p>祝您开心</p>
+<p>福蜡斯克团队</p>
+<p><small>提示: 对此邮件的回复将不会被监控</small></p>

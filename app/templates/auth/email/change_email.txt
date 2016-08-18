@@ -1,0 +1,11 @@
+{{ user.username }},您好
+
+为了激活您的新邮箱您需要点击下面的链接:
+
+{{ url_for('auth.change_email', token=token, _external=True) }}
+
+祝您开心,
+
+福蜡斯克团队
+
+提示: 对此邮件的回复将不会被监控.

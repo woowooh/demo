@@ -1,0 +1,8 @@
+<p>{{ user.username }},您好</p>
+<p>欢迎注册<b>福蜡斯克</b>!</p>
+<p>请验证您的账户<a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击验证</a>.</p>
+<p>您同样可以复制下面的链接至浏览器地址栏来验证您的账号</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>祝您开心,</p>
+<p>福蜡斯克团队</p>
+<p><small>提示: 对此邮件的回复将不会被监控.</small></p>
