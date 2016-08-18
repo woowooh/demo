@@ -5,9 +5,9 @@
 * Python 2.7.12
 
 ## 功能:
-* 用户模型，账户验证，登陆，注册(flask-login，itsdangerous，sqlalchemy)。
-* 评论管理，权限管理，关注功能
-* 前端bootstrap，markdown富文本
+* 用户模型，账户验证，登陆，注册(Flask-Login，itsdangerous，Flask-SQLAlchemy, Flask-WTF, Flaks-Mail)；
+* 评论管理，权限管理，关注功能,gravatar头像；
+* 前端bootstrap，markdown文章富文本，jinja2(PageDown, Flask-PageDown, MarkDown, Bleach)
 
 ## Requirements
 pip install -r requirements.txt
