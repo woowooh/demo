@@ -27,7 +27,7 @@
                 </a>
                 {% endif %}
                 <a href="{{ url_for('.post', id=post.id) }}">
-                    <span class="label label-default">博客链接</span>
+                    <span class="label label-default">文章链接</span>
                 </a>
                 <a href="{{ url_for('.post', id=post.id) }}#comments">
                     <span class="label label-primary">{{ post.comments.count() }} 评论</span>
