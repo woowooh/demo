@@ -123,7 +123,7 @@ def follow(username):
         flash(u'你已经关注了这个用户.')
         return redirect(url_for('.user', username=username))
     current_user.follow(user)
-    flash(u'您取消了对用户%s的关注.' % username)
+    flash(u'你关注了用户%s.' % username)
     return redirect(url_for('.user', username=username))
 
 @main.route('/followers/<username>')
